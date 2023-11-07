@@ -1,0 +1,75 @@
+    [
+      {
+        "id": 1,
+        "image": "https://i.ibb.co/Kjpjj2g/sundarban-tiger.jpg" ,
+        "name": "Sundarbans Mangrove Forest",
+        "description": "Explore the enchanting Sundarbans, a UNESCO World Heritage Site known for its rich biodiversity and the elusive Bengal Tiger. Cruise through its intricate waterways, spot unique wildlife.",
+        "price": "$150 per person for a day tour",
+        "serviceProviderImage": "https://i.ibb.co/HPY5c2F/Whats-App-Image-2023-05-24-at-17-46-56.jpg",
+        "serviceProviderName": "Shajjadul Islam"
+      },
+      {
+        "id": 2,
+        "image": "https://i.ibb.co/pXpSs4J/coxs-bazar-2008061346.jpg" ,
+        "name": "Cox's Bazar Beach",
+        "description": "Discover the world's longest natural sea beach at Cox's Bazar. Stroll along the golden sands, enjoy beachside activities, and relish fresh seafood at local shacks. A perfect destination for beach lovers.",
+        "price": "$80 per night for beachfront accommodation",
+        "serviceProviderImage": "https://i.ibb.co/HPY5c2F/Whats-App-Image-2023-05-24-at-17-46-56.jpg",
+        "serviceProviderName": "Shajjadul Islam"
+      },
+      {
+        "id": 3,
+        "image": "https://i.ibb.co/SRKZkVW/360-F-326426444-8e32-Kwf-T9ajo-ZW9nu-Yf-Z0w-JWIv-CRh-Pyg.jpg",
+        "name": "Sajek Valley",
+        "description": "Sajek Valley, perched in the Chittagong Hill Tracts, offers panoramic views of lush green landscapes and serene villages. Hike through the hills, interact with indigenous tribes, and camp under the starry sky.",
+        "price": "$70 per night for a hillside cottage",
+        "serviceProviderImage": "https://i.ibb.co/HPY5c2F/Whats-App-Image-2023-05-24-at-17-46-56.jpg",
+        "serviceProviderName": "Shajjadul Islam"
+      },
+      {
+        "id": 4,
+        "image": "https://i.ibb.co/wdbGV43/Hanging-Bridge-Kaptai-Lake-1.jpg",
+        "name": "Rangamati",
+        "description": "Rangamati is a scenic hill district with a serene lake, perfect for boating and water sports. Visit tribal villages, enjoy the Chakma handicrafts, and relish the tranquility amidst hills.",
+        "price": "$60 per night for a lakeside retreat",
+        "serviceProviderImage": "https://i.ibb.co/HPY5c2F/Whats-App-Image-2023-05-24-at-17-46-56.jpg",
+        "serviceProviderName": "Shajjadul Islam"
+      },
+      {
+        "id": 5,
+        "image": "https://i.ibb.co/X2sYrzr/p139120.jpg" ,
+        "name": "Kuakata Sea Beach",
+        "description": "Kuakata is known as the 'Daughter of the Sea.' It offers a unique view of both sunrise and sunset over the Bay of Bengal. Relax on the unspoiled beach and enjoy the tranquil ambience.",
+        "price": "$75 per night for a beachside cottage",
+        "serviceProviderImage": "https://i.ibb.co/HPY5c2F/Whats-App-Image-2023-05-24-at-17-46-56.jpg",
+        "serviceProviderName": "Shajjadul Islam"
+      },
+      {
+        "id": 6,
+        "image": "https://i.ibb.co/Dg3SzkJ/6ee29ed1-b154-40fc-912e-d7ea85ac9fba.jpg",
+        "name": "Sundari Cholon Island",
+        "description": "This hidden gem in the Bay of Bengal is a paradise for snorkeling and diving enthusiasts. Crystal-clear waters, vibrant marine life, and untouched coral reefs await those who seek adventure.",
+        "price": "$120 for a day of snorkeling and diving",
+        "serviceProviderImage": "https://i.ibb.co/HPY5c2F/Whats-App-Image-2023-05-24-at-17-46-56.jpg",
+        "serviceProviderName": "Shajjadul Islam"
+      },
+      {
+        "id": 7,
+        "image": "https://i.ibb.co/WfyLWW7/Coxs-Bazaar-Saintmartin.jpg",
+        "name": "Saint Martin's Island",
+        "description": "Saint Martin's, the only coral island in Bangladesh, is a tropical paradise. Explore pristine beaches, enjoy fresh seafood, and snorkel to discover colorful corals and marine life.",
+        "price": "$90 per night for beachfront bungalows",
+        "serviceProviderImage": "https://i.ibb.co/HPY5c2F/Whats-App-Image-2023-05-24-at-17-46-56.jpg",
+        "serviceProviderName": "Shajjadul Islam"
+      },
+      {
+        "id": 8,
+        "image": "https://i.ibb.co/Lx2JKnK/Paharpur-Temple-Village-Tou.jpg",
+        "name": "Paharpur Buddhist Vihara",
+        "description": "Immerse yourself in the historical marvel of Paharpur Vihara, an ancient Buddhist monastery. Explore the archaeological site and learn about the rich Buddhist heritage of Bangladesh.",
+        "price": "$20 for a guided tour and cultural experience",
+        "serviceProviderImage": "https://i.ibb.co/HPY5c2F/Whats-App-Image-2023-05-24-at-17-46-56.jpg",
+        "serviceProviderName": "Shajjadul Islam"
+      }
+    ]
+  
