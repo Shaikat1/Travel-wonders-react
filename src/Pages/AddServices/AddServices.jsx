@@ -1,6 +1,7 @@
 
 import { useContext, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const AddServices = () => {
@@ -10,7 +11,6 @@ const AddServices = () => {
     const handleSubmit = (event) =>{
       event.preventDefault()
       const form = event.target;
-      console.log(form)
       const name = form.name.value;
       const email = form.email.value;
       const photoURL = form.photoURL.value;
@@ -30,6 +30,23 @@ const AddServices = () => {
         area,
       }
       console.log(service)
+  //     fetch("http://localhost:5000/my-services", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(service),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       if(data.insertedId){
+  //         Swal.fire('Product added successfully')
+  //       }
+  //       form.reset()
+  //     });
+  // };
+
       
     }
 

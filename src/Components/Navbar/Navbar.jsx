@@ -15,13 +15,13 @@ const Navbar = () => {
             <div className="navbar bg-base-100">
 
   <div className="navbar-start">
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <img src="https://i.ibb.co/rwN8Dd8/istockphoto-942839478-612x612-removebg-preview.png" alt="" className="h-28"/>
   </div>
-  <div className="navbar-center gap-2">
+  <div className="navbar-center gap-4 font-medium text-2xl text-gray-500">
       <NavLink
         to="/"
         className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
+          isPending ? "pending" : isActive ? "text-[#1195b2]" : ""
         }
       >
         Home
@@ -29,7 +29,7 @@ const Navbar = () => {
       <NavLink
         to="/services"
         className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
+          isPending ? "pending" : isActive ? "text-[#1195b2]" : ""
         }
       >
         Services
@@ -40,7 +40,7 @@ const Navbar = () => {
       {
         user ?
         
-       <div className="flex items-center">
+       <div className="flex items-center gap-3">
          <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
@@ -59,12 +59,12 @@ const Navbar = () => {
               <li><button onClick={handleLogOut}>Log Out</button></li>
             </ul>
           </div>
-              <div className="dropdown dropdown-hover">
-              <label tabIndex={0} className="btn m-1">Dashboard</label>
-              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <Link to="/my-services"><li><a>My-Services</a></li></Link>
-                  <Link to="/add-services"><li><a>Add-Services</a></li></Link>
-                  <Link to="/my-schedules"><li><a>My-schedules</a></li></Link>
+              <div className="dropdown dropdown-hover mr-10 ">
+              <label tabIndex={0} className="px-4 py-3 rounded-lg m-1 bg-[#1195b2] text-white hover:cursor-pointer">Dashboard</label>
+              <ul tabIndex={0} className="dropdown-content z-[1] menu p-4 shadow bg-base-100 rounded-box w-52 text-lg mt-4">
+                  <Link to="/my-services"><li className="hover:text-[#1195b2] ">My-Services</li></Link>
+                  <Link to="/add-services" className="hover:text-[#1195b2]"><li>Add-Services</li></Link>
+                  <Link to="/my-schedules" className="hover:text-[#1195b2]"><li>My-schedules</li></Link>
                   
               </ul>
               </div>
