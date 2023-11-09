@@ -2,7 +2,7 @@ import Banner from "../../Components/Banner.jsx/Banner";
 import Gallery from "../../Components/Gallery/Gallery";
 // import Pricing from "../../Components/Pricing/Pricing";
 import Services from "../../Components/Services/Services";
-// import Team from "../../Components/Team/Team";
+import Team from "../../Components/Team/Team";
 
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
                 <Services></Services>
             </div>
             <div>
-                {/* <Team></Team> */}
+                <Team></Team>
             </div>
 
             <div>
