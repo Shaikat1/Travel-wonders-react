@@ -30,25 +30,22 @@ const AddServices = () => {
         area,
       }
       console.log(service)
-  //     fetch("http://localhost:5000/my-services", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(service),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //       if(data.insertedId){
-  //         Swal.fire('Product added successfully')
-  //       }
-  //       form.reset()
-  //     });
-  // };
-
-      
-    }
+      fetch("http://localhost:5000/my_services", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(service),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if(data.insertedId){
+          Swal.fire('Product added successfully')
+        }
+        form.reset()
+      });
+  };
 
     return (
       <div className="pb-28">
