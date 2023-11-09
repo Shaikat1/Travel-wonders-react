@@ -155,7 +155,7 @@ const Team = () => {
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://i.ibb.co/rvktrCK/disappointed-man-wearing-denim-shirt-329181-3664.jpg" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm" src="https://i.ibb.co/rvktrCK/disappointed-man-wearing-denim-shirt-329181-3664.jpg"/>
 				<div className="flex flex-col items-center">
 					<h4 className="text-xl font-semibold">Kane Potts</h4>
 					<p className="text-sm dark:text-gray-400">Tour Specialist</p>

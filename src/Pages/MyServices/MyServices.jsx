@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom"
 
 import { useEffect, useState } from "react";
-import MyServicesCard from "./MyservicesCard";
+import MyServicesCard from "./MyServicesCard";
 
 
 const MyServices = () => {
