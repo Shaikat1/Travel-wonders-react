@@ -9,6 +9,7 @@ import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import ErrorPage from "../Pages/ErrorPages/ErrorPage";
 import MyServices from "../Pages/MyServices/MyServices";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import Schedules from "../Pages/Schedules/Schedules";
 
 const router = createBrowserRouter([
     {
@@ -48,8 +49,9 @@ const router = createBrowserRouter([
           loader: ()=> fetch("http://localhost:5000/my_services")
         },
         {
-          path:"/my-schedules",
-          element:<AllServices></AllServices>,
+          path:"/my_schedules",
+          element:<Schedules></Schedules>,
+          loader: ()=> fetch("http://localhost:5000/my_booking")
         },
       ]
     },

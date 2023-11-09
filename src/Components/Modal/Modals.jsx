@@ -52,7 +52,7 @@ const Modals = ({service}) => {
     };
     return (
         <div>
-            <Button onClick={() => setOpenModal(true)}>Toggle modal</Button>
+            <Button onClick={() => setOpenModal(true)}>Book Now</Button>
       <Modal show={openModal} size="md" onClose={onCloseModal} popup>
         <Modal.Header />
         <Modal.Body>
