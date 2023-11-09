@@ -10,8 +10,8 @@ const AllServices = () => {
         .then(data => setServices(data))
     },[])
     return (
-        <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <div className="max-w-[1500px] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             {
                services.map(service => <AllServicesCard key={service.id} service={service}></AllServicesCard>)
             }

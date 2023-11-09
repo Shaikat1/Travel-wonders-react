@@ -12,8 +12,8 @@ const Services = () => {
     },[])
     const sliceServices = services.slice(0,4)
     return (
-        <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <div className="max-w-[1500px] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3">
             {
                 sliceServices.map(service => <ServicesCard key={service.id} service={service}></ServicesCard>)
             }

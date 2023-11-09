@@ -69,8 +69,8 @@ const handleLoginWithGoogle = () => {
 }
 return (
         <div>
-            <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-900 dark:text-gray-100">
-	<h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
+            <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-900 dark:text-gray-100 mx-auto">
+	<h2 className="mb-3 text-3xl font-semibold text-center">Register your account</h2>
 	<p className="text-sm text-center dark:text-gray-400">Have an account?
 		<Link to="/login"><a href="#" rel="noopener noreferrer" className="focus:underline hover:underline">Login</a></Link>
 	</p>
@@ -117,7 +117,7 @@ return (
                 </h1>
             }
         </div>
-		<button onClick={handleRegister} type="button" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900">Register</button>
+		<button onClick={handleRegister} type="button" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900 bg-[#1195b2] text-white">Register</button>
 	</form>
 </div>
         </div>

@@ -47,10 +47,10 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
     }
   
       return (
-        <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-900 dark:text-gray-100">
+        <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-900 dark:text-gray-100 mx-auto">
 	<h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
 	<p className="text-sm text-center dark:text-gray-400">Dont have account?
-		<Link to="/register"><a href="#" rel="noopener noreferrer" className="focus:underline hover:underline">Register</a></Link>
+		<Link to="/register"><a href="#" rel="noopener noreferrer" className="focus:underline hover:underline text-[#1195b2]">Register</a></Link>
 	</p>
 	<div className="my-6 space-y-4">
 		<button aria-label="Login with Google" type="button" className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ri focus:ri dark:border-gray-400 focus:ri" onClick={handleLoginWithGoogle}>
@@ -87,7 +87,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
                 </h1>
             }
         </div>
-		<button onClick={handleLogin} type="button" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900">Login</button>
+		<button onClick={handleLogin} type="button" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900 bg-[#1195b2] text-white">Login</button>
 	</form>
 </div>
 
