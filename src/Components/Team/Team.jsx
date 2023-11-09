@@ -11,10 +11,10 @@ const Team = () => {
 		</div>
 		<div className="grid w-full grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?0" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://i.ibb.co/pbq5H79/portrait-white-man-isolated-53876-40306.jpg" />
 				<div className="flex flex-col items-center">
 					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm dark:text-gray-400">Web developer</p>
+					<p className="text-sm dark:text-gray-400">CEO</p>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-400">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">
@@ -35,10 +35,10 @@ const Team = () => {
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?1" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://i.ibb.co/PtnfC79/photo-1566753323558-f4e0952af115-q-80-w-1000-auto-format-fit-crop-ixlib-rb-4-0.jpg"  />
 				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm dark:text-gray-400">Web developer</p>
+					<h4 className="text-xl font-semibold">Jason Smith</h4>
+					<p className="text-sm dark:text-gray-400">Product Manager</p>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-400">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">
@@ -59,10 +59,10 @@ const Team = () => {
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?2" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://i.ibb.co/NThf6Xk/98511ee98a1930b8938e42caf0904d2d.jpg"  />
 				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm dark:text-gray-400">Web developer</p>
+					<h4 className="text-xl font-semibold">Lary king</h4>
+					<p className="text-sm dark:text-gray-400">Executive officer</p>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-400">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">
@@ -83,10 +83,10 @@ const Team = () => {
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?3" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://i.ibb.co/rsbcRCy/depositphotos-22285449-profile.webp"/>
 				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm dark:text-gray-400">Web developer</p>
+					<h4 className="text-xl font-semibold">Leroy David</h4>
+					<p className="text-sm dark:text-gray-400">Marketing Offier</p>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-400">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">
@@ -107,10 +107,10 @@ const Team = () => {
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?4" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://i.ibb.co/bmngn8G/theres-something-majestic-about-this-picture-cropped-shot-handsome-young-man-posing-against-grey-bac.jpg" />
 				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm dark:text-gray-400">Web developer</p>
+					<h4 className="text-xl font-semibold">Henry Williams</h4>
+					<p className="text-sm dark:text-gray-400">Tour Specialist</p>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-400">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">
@@ -131,10 +131,10 @@ const Team = () => {
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?5" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://i.ibb.co/4Z1f0dD/images-q-tbn-ANd9-Gc-R31zk-3ymh-FDVLc-Ktefr-pho-M5-U-LWZZF6-BK7-SADCp-ZYX6-W5-MF7-IGdzaiuik-N5p-Js5.jpg"  />
 				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm dark:text-gray-400">Web developer</p>
+					<h4 className="text-xl font-semibold">Ben Castle</h4>
+					<p className="text-sm dark:text-gray-400">Management Officer</p>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-400">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">
@@ -155,10 +155,10 @@ const Team = () => {
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?6" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://i.ibb.co/rvktrCK/disappointed-man-wearing-denim-shirt-329181-3664.jpg" />
 				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm dark:text-gray-400">Web developer</p>
+					<h4 className="text-xl font-semibold">Kane Potts</h4>
+					<p className="text-sm dark:text-gray-400">Tour Specialist</p>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-400">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">
@@ -179,10 +179,10 @@ const Team = () => {
 				</div>
 			</div>
 			<div className="space-y-4">
-				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?7" />
+				<img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://i.ibb.co/Lk9YDyP/social-media-profile-photos-3.jpg" />
 				<div className="flex flex-col items-center">
-					<h4 className="text-xl font-semibold">Leroy Jenkins</h4>
-					<p className="text-sm dark:text-gray-400">Web developer</p>
+					<h4 className="text-xl font-semibold">Max Owad</h4>
+					<p className="text-sm dark:text-gray-400">Tour Specialist</p>
 					<div className="flex mt-2 space-x-2">
 						<a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-400">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">

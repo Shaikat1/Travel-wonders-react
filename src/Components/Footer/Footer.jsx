@@ -9,9 +9,9 @@ const Footer = () => {
 			<a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
 				<div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
 				</div>
-				<div className="flex justify-start items-center gap-0 space-x-0">
+				<div className="flex justify-start items-center flex-col gap-0 space-x-0 mb-6">
     <img src="https://i.ibb.co/rwN8Dd8/istockphoto-942839478-612x612-removebg-preview.png" alt="" className="h-28"/>
-    <h1 className="text-[#1195b2] text-lg md:text-3xl hidden md:block">Travel <span>Wonders</span></h1>
+    <h1 className="text-[#1195b2] text-lg md:text-3xl md:block">Travel <span>Wonders</span></h1>
     </div>
 			</a>
 		</div>
