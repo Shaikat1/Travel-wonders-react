@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const AllServicesCard = ({service}) => {
     const {id,image,description,serviceProviderName,serviceProviderImage,price,name} = service
     return (
-        <div>
+        <div className='mx-auto'>
             <div className="flex flex-col max-w-md p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-900 dark:text-gray-100">
 	<div className="flex space-x-4">
 		<img alt="" src={serviceProviderImage} className="object-cover w-12 h-12 rounded-full shadow dark:bg-gray-500" />
