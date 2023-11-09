@@ -190,7 +190,7 @@ const AddServices = () => {
               </div>
             </div>
             <div className="flex justify-center items-center mt-10">
-               <button className="btn bg-blue-gray-400 text-black hover:bg-blue-gray-600 border-0 px-11"><input type="submit" value="Add"/></button>
+               <button className="btn bg-[#1195b2] text-white hover:bg-[#1195b2] border-0 px-11"><input type="submit" value="Add"/></button>
               </div>
           </div>
         </form>
