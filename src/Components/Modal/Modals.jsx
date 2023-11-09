@@ -1,62 +1,51 @@
+import { Button, Checkbox, Label, Modal, TextInput } from 'flowbite-react';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
-import { useContext, useState } from "react";
-import { AuthContext } from "../../AuthProvider/AuthProvider";
-import Swal from "sweetalert2";
+const Modals = ({service}) => {
+    const [openModal, setOpenModal] = useState(false);
+    const [email, setEmail] = useState('');
+    const {user} = useContext(AuthContext)
 
-
-const AddServices = () => {
-    const {user} = useContext(AuthContext);
-
-    
+    function onCloseModal() {
+    setOpenModal(false);
+    setEmail('');
+    }
+    const {image,name,description,price,serviceProviderImage,serviceProviderName,area} = service
     const handleSubmit = (event) =>{
-      event.preventDefault()
-      const form = event.target;
-      const name = form.name.value;
-      const email = form.email.value;
-      const photoURL = form.photoURL.value;
-      const serviceName = form.serviceName.value;
-      const servicePhotoURL = form.servicePhotoURL.value;
-      const description = form.description.value;
-      const price = form.price.value;
-      const area = form.area.value;
-      const service = {
-        name,
-        email,
-        photoURL,
-        serviceName,
-        servicePhotoURL,
-        description,
-        price,
-        area,
-      }
-      console.log(service)
-      fetch("http://localhost:5000/my_services", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(service),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        if(data.insertedId){
-          Swal.fire('Product added successfully')
+        event.preventDefault()
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const photoURL = form.photoURL.value;
+        const serviceName = form.serviceName.value;
+        const servicePhotoURL = form.servicePhotoURL.value;
+        const price = form.price.value;
+        const area = form.area.value;
+        const service = {
+          name,
+          email,
+          photoURL,
+          serviceName,
+          servicePhotoURL,
+          price,
+          area,
         }
-        form.reset()
-      });
-  };
 
+    };
     return (
-      <div className="pb-28">
-        <div className=" mx-auto max-w-[1300px] mt-20 bg-blue-gray-50 text-black px-10 pt-10">
+        <div>
+            <Button onClick={() => setOpenModal(true)}>Toggle modal</Button>
+      <Modal show={openModal} size="md" onClose={onCloseModal} popup>
+        <Modal.Header />
+        <Modal.Body>
         <form onSubmit={handleSubmit}>
         <div className="border-b border-gray-900/10 pb-12">
             <h2 className="text-2xl font-semibold leading-7 text-black text-center">Add Your Service Details</h2>
             {/* <p className="mt-1 text-sm leading-6 text-gray-600 text-center">Use a permanent address where you can receive mail.</p> */}
   
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-              <div className="sm:col-span-3">
+              <div className="sm:col-span-full">
                 <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-black">
                   Name
                 </label>
@@ -116,7 +105,8 @@ const AddServices = () => {
                     name="serviceName"
                     type="text"
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-3"
-                    
+                    defaultValue={name}
+                    readOnly
                   />
                 </div>
               </div>
@@ -130,42 +120,34 @@ const AddServices = () => {
                     name="servicePhotoURL"
                     type="text"
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-3"
-                    
+                    defaultValue={image}
+                    readOnly
                   />
                 </div>
               </div>
-  
               <div className="sm:col-span-3">
-                <label htmlFor="country" className="block text-sm font-medium leading-6 text-black">
-                  Service Area
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-black">
+                  Area
                 </label>
                 <div className="mt-2">
-                  <select
+                  <input
                     id="area"
                     name="area"
-                    autoComplete="area-name"
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6 pl-3"
-                  >
-                    <option>Dhaka</option>
-                    <option>Rangpur</option>
-                    <option>Rajshahi</option>
-                    <option>Mymensingh</option>
-                    <option>Chitagong</option>
-                    <option>Khulna</option>
-                    <option>Barisal</option>
-                    <option>Sylhet</option>
-                  </select>
+                    type="text"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-3"
+                    required
+                  />
                 </div>
               </div>
   
               <div className="col-span-full">
                 <label htmlFor="street-address" className="block text-sm font-medium leading-6 text-black">
-                  Short Description
+                  Date
                 </label>
                 <div className="mt-2">
                   <input
-                    type="text"
-                    name="description"
+                    type="date"
+                    name="date"
                     id="street-address"
                     autoComplete="street-address"
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-3 h-14"
@@ -185,18 +167,21 @@ const AddServices = () => {
                     id="price"
                     autoComplete="address-level2"
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-3"
+                    defaultValue={price}
+                    readOnly
                   />
                 </div>
               </div>
             </div>
             <div className="flex justify-center items-center mt-10">
-               <button className="btn bg-blue-gray-400 text-black hover:bg-blue-gray-600 border-0 px-11"><input type="submit" value="Add"/></button>
+               <button className="px-4 py-2 rounded-lg m-1 bg-[#1195b2] text-white cursor-pointer"><input type="submit" value="Purchase" className=' rounded-lg m-1 bg-[#1195b2] text-white hover:cursor-pointer'/></button>
               </div>
           </div>
         </form>
-      </div>
-      </div>
+        </Modal.Body>
+      </Modal>
+        </div>
     );
-  };
-  
-  export default AddServices;
+};
+
+export default Modals;
