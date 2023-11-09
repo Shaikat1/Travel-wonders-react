@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         {
           path:"/services",
           element:<AllServices></AllServices>,
-          loader: ()=> fetch("http://localhost:5000/services")
+          loader: ()=> fetch("https://tour-and-guide-server-side.vercel.app/services")
         },
         {
           path:"/add_services",
@@ -41,17 +41,17 @@ const router = createBrowserRouter([
         {
           path:"/services/:id",
           element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`),
+          loader: ({params}) => fetch(`https://tour-and-guide-server-side.vercel.app/services/${params.id}`),
         },
         {
           path:"/my_services",
           element:<PrivateRoute><MyServices></MyServices></PrivateRoute>,
-          loader: ()=> fetch("http://localhost:5000/my_services")
+          loader: ()=> fetch("https://tour-and-guide-server-side.vercel.app/my_services")
         },
         {
           path:"/my_schedules",
           element:<Schedules></Schedules>,
-          loader: ()=> fetch("http://localhost:5000/my_booking")
+          loader: ()=> fetch("https://tour-and-guide-server-side.vercel.app/my_booking")
         },
       ]
     },

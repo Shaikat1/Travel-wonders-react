@@ -33,7 +33,7 @@ const Modals = ({service}) => {
           price,
           area,
         }
-        fetch("http://localhost:5000/my_booking", {
+        fetch("https://tour-and-guide-server-side.vercel.app/my_booking", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

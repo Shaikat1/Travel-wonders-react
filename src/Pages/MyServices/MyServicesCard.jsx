@@ -16,7 +16,7 @@ const MyServicesCard = ({myProduct}) => {
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.isConfirmed) {
-          fetch(`http://localhost:5000/my_services/${_id}`, {
+          fetch(`https://tour-and-guide-server-side.vercel.app/my_services/${_id}`, {
             method: "DELETE",
             })
             .then((res) => res.json())

@@ -30,7 +30,7 @@ const AddServices = () => {
         area,
       }
       console.log(service)
-      fetch("http://localhost:5000/my_services", {
+      fetch("https://tour-and-guide-server-side.vercel.app/my_services", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
