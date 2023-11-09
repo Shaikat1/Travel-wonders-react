@@ -65,9 +65,9 @@ const Navbar = () => {
               <div className="dropdown dropdown-hover md:mr-10 ">
               <label tabIndex={0} className="px-4 py-3 rounded-lg m-1 bg-[#1195b2] text-white hover:cursor-pointer">Dashboard</label>
               <ul tabIndex={0} className="dropdown-content z-[1] menu p-4 shadow bg-base-100 rounded-box w-52 text-lg mt-4">
-                  <Link to="/my-services"><li className="hover:text-[#1195b2] ">My-Services</li></Link>
-                  <Link to="/add-services" className="hover:text-[#1195b2]"><li>Add-Services</li></Link>
-                  <Link to="/my-schedules" className="hover:text-[#1195b2]"><li>My-schedules</li></Link>
+                  <Link to="/my_services"><li className="hover:text-[#1195b2] ">My-Services</li></Link>
+                  <Link to="/add_services" className="hover:text-[#1195b2]"><li>Add-Services</li></Link>
+                  <Link to="/my_schedules" className="hover:text-[#1195b2]"><li>My-schedules</li></Link>
                   
               </ul>
               </div>

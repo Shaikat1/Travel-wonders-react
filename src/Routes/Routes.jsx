@@ -7,6 +7,7 @@ import AllServices from "../Pages/AllServices/AllServices";
 import AddServices from "../Pages/AddServices/AddServices";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import ErrorPage from "../Pages/ErrorPages/ErrorPage";
+import MyServices from "../Pages/MyServices/MyServices";
 
 const router = createBrowserRouter([
     {
@@ -29,24 +30,26 @@ const router = createBrowserRouter([
         {
           path:"/services",
           element:<AllServices></AllServices>,
+          loader: ()=> fetch("http://localhost:5000/services")
         },
         {
-          path:"/add-services",
+          path:"/add_services",
           element:<AddServices></AddServices>,
         },
         {
           path:"/services/:id",
           element:<ServiceDetails></ServiceDetails>,
-          loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+          loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`),
         },
-        // {
-        //   path:"/my-services",
-        //   element:<AllServices></AllServices>,
-        // },
-        // {
-        //   path:"/my-schedules",
-        //   element:<AllServices></AllServices>,
-        // },
+        {
+          path:"/my_services",
+          element:<MyServices></MyServices>,
+          loader: ()=> fetch("http://localhost:5000/my_services")
+        },
+        {
+          path:"/my-schedules",
+          element:<AllServices></AllServices>,
+        },
       ]
     },
   ]);

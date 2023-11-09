@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
 import AllServicesCard from "./AllServicesCard";
+import { useLoaderData } from "react-router-dom";
 
 
 const AllServices = () => {
-    const [services,setServices] = useState([])
+    const services = useLoaderData()
     const [input,setInput] = useState("")
-    useEffect(() => {
-        fetch("Services.json")
-        .then(res => res.json())
-        .then(data => setServices(data))
-    },[])
+    
     const handleInput = (event) =>{
         event.preventDefault()
         const input1= event.target.input.value;

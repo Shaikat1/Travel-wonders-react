@@ -1,11 +1,13 @@
 import { Button, Checkbox, Label, Modal, TextInput } from 'flowbite-react';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Modals = ({service}) => {
     const [openModal, setOpenModal] = useState(false);
     const [email, setEmail] = useState('');
     const {user} = useContext(AuthContext)
+    console.log(service)
 
     function onCloseModal() {
     setOpenModal(false);
@@ -31,6 +33,21 @@ const Modals = ({service}) => {
           price,
           area,
         }
+        fetch("http://localhost:5000/my_booking", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(service),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if(data.insertedId){
+          Swal.fire('Product added successfully')
+        }
+        form.reset()
+      });
 
     };
     return (
