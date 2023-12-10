@@ -1,5 +1,3 @@
-# assignment_category_0002
-
 # website Name
 Travel Wonders
 # Live Link
